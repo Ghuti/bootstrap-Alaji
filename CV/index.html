@@ -12,62 +12,87 @@
     <nav class="navbar navbar-dark bg-dark text-white">
       <div class="container">
         <div class="row">
-          <div class="col col-md-auto">
-            <img src="moi.jpg" alt="Yannick REMY style="width="200px"">
+          <div class="col col-md-3.5">
+            <img src="moi.jpg" alt="Yannick REMY style="width="150px"">
           </div>
-          <div class="col-md-auto">
-            <h1>Yannick REMY (╯°□°）╯︵ ┻━┻</h1>
-            <h2>Dévellopeur Web<h2>
-            <p>22 ans</p>
-            <p>Permis B</p>
+          <div class="col col-md-auto">
+            <h1 id="rage">Yannick REMY (╯°□°）╯︵ ┻━┻</h1>
+            <!--<h2>Dévellopeur Web</h2>-->
+            <h4>22 ans</h4>
+            <h4>Permis B</h4>
           </div>
         </div>
       </div>
     </nav>
 
+    <br>
+
     <div class="container">
       <div class="row"
-        <div class="col-sm">
-          <h1>Hobbies :</h1>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-        </div>
-        <div class="col-sm">
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <p>blablablablabla</p>
-          <!--<div class="jumbotron">
-            <h1>formation :</h1>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-          </div>
+        <div class="col">
           <div class="jumbotron">
-            <h1>Expérience Professionnelle :</h1>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-            <p>blablablablabla</p>
-          </div> -->
+            <h2>Contact :</h2>
+            <hr class="my-4">
+            <a href="mailto:yannick.remy16@gmail.com">Email : yannick.remy16@gmail.com</a>
+            <br>
+            <a href="tel:+33638025870">tel : 06.38.02.58.70</a>
+            <br>
+            <br>
+            <br>
+            <h2>Hobbies :</h2>
+            <hr class="my-4">
+            <p>Restauration de voiture</p>
+            <p>VTT</p>
+            <p>Passionné d'informatique</p>
+          </div>
+
+          <div class="col">
+            <div class="jumbotron">
+              <h2>formation :</h2>
+              <hr class="my-4">
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+            </div>
+            <div class="jumbotron">
+              <h2>Expérience Professionnelle :</h2>
+              <hr class="my-4">
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+              <p>blablablablabla</p>
+            </div>
+          </div>
         </div>
       </div>
-    <div>
+    </div>
 
     <footer class="py-5 bg-dark text-white text-center">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.100324395516!2d6.462400315863485!3d48.18541847922741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4793a05d7cb96129%3A0xc3517e788d75a1e2!2s32+All%C3%A9e+des+Noisetiers%2C+88000+%C3%89pinal!5e0!3m2!1sfr!2sfr!4v1477350255036" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
       <p>Copyright © Yannick.R</p>
     </footer>
+
+    <script>
+      var rage = document.getElementById("rage");
+      flip = 0;
+
+      rage = function() {
+			  if (flip == 0) {
+          flip = flip += 1;
+          rage.innerHTML = "┬─┬ノ(ಠ_ಠノ)";
+        }
+        else {
+          flip = flip -= 1;
+          rage.innerHTML = "(╯°□°）╯︵ ┻━┻";
+        }
+      }
+
+      setInterval(rage, 1000);
+    </script>
   </body>
 </html>
